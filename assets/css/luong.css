@@ -27,6 +27,29 @@ body {
     background-attachment: fixed;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode .section-card {
+    background-color: #1e1e1e;
+    border-color: #333333;
+}
+
+body.dark-mode .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #333333;
+    color: #ffffff;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
