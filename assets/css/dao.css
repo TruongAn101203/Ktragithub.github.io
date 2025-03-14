@@ -679,6 +679,69 @@ footer {
 .footer-links a:hover {
     color: var(--accent-color);
 }
+/* Testimonials Section */
+.testimonials {
+    padding: 6rem 5%;
+    background: var(--light-bg);
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.testimonial-slider {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.testimonial-item {
+    flex: 1 0 100%;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-item p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.testimonial-item h3 {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.prev-btn, .next-btn {
+    background: var(--white);
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: var(--gradient);
+    color: var(--white);
+}
 
 /* Responsive design */
 @media (max-width: 1024px) {
