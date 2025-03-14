@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân</title>
+    <link rel="stylesheet" href="../assets/css/luong.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-banner">
+                <div class="profile-image">
+                    <img src="../assets/images/LUONG.jpg" alt="Ảnh đại diện">
+                </div>
+                <div class="profile-info">
+                    <h1>Châu Kiến Lương</h1>
+                    <p class="title">Web Developer & UI/UX Designer</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link" onclick="smoothScroll(event, '#about')"><i
+                                class="fas fa-user"></i> Giới thiệu</a></li>
+                    <li><a href="#skills" class="nav-link" onclick="smoothScroll(event, '#skills')"><i
+                                class="fas fa-code"></i> Kỹ năng</a></li>
+                    <li><a href="#portfolio" class="nav-link" onclick="smoothScroll(event, '#portfolio')"><i
+                                class="fas fa-image"></i> Dự án</a></li>
+                    <li><a href="#contact" class="nav-link" onclick="smoothScroll(event, '#contact')"><i
+                                class="fas fa-envelope"></i> Liên hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about" class="section-card">
+                <div class="section-header">
+                    <h2><i class="fas fa-user"></i> Giới thiệu</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Xin chào! Tôi là <strong>Châu Kiến Lương</strong>, một nhà phát triển web đam mê với hơn 5
+                            năm kinh nghiệm trong việc tạo ra các trải nghiệm web tuyệt vời.</p>
+                        <p>Tôi chuyên về phát triển front-end với HTML, CSS, JavaScript và các framework hiện đại như
+                            React. Tôi cũng có kinh nghiệm trong thiết kế UI/UX và luôn tìm cách tạo ra các giao diện
+                            người dùng trực quan và thân thiện.</p>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-calendar"></i> Ngày sinh:</span>
+                            <span class="detail-value">21/10/2003</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-map-marker-alt"></i> Địa chỉ:</span>
+                            <span class="detail-value">TP.HCM, Việt Nam</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-envelope"></i> Email:</span>
+                            <span class="detail-value">ckluong21@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-phone"></i> MSSV:</span>
+                            <span class="detail-value">2180607719</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section-card">
+                <div class="section-header">
+                    <h2><i class="fas fa-code"></i> Kỹ năng</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Kỹ năng lập trình</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Kỹ năng thiết kế</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="section-card">
+                <div class="section-header">
+                    <h2><i class="fas fa-image"></i> Dự án</h2>
+                </div>
+                <div class="portfolio-gallery">
+                    <div class="portfolio-item">
+                        <img src="images/project1.jpg" alt="Dự án 1">
+                        <div class="portfolio-overlay">
+                            <h3>Website Thương mại điện tử</h3>
+                            <p>HTML, CSS, JavaScript, React</p>
+                            <a href="#" class="btn-view">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/project2.jpg" alt="Dự án 2">
+                        <div class="portfolio-overlay">
+                            <h3>Ứng dụng quản lý công việc</h3>
+                            <p>React, Node.js, MongoDB</p>
+                            <a href="#" class="btn-view">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/project3.jpg" alt="Dự án 3">
+                        <div class="portfolio-overlay">
+                            <h3>Thiết kế UI cho ứng dụng di động</h3>
+                            <p>Figma, Adobe XD</p>
+                            <a href="#" class="btn-view">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/project4.jpg" alt="Dự án 4">
+                        <div class="portfolio-overlay">
+                            <h3>Website du lịch</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                            <a href="#" class="btn-view">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section-card">
+                <div class="section-header">
+                    <h2><i class="fas fa-envelope"></i> Liên hệ</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Địa chỉ</h3>
+                                <p>TP.HCM, Việt Nam</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>ckluong21@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>MSSV</h3>
+                                <p>2180607719</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Họ tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Tiêu đề" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Nội dung tin nhắn" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Châu Kiến Lương. Tất cả các quyền được bảo lưu.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
