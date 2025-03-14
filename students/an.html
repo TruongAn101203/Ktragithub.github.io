@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới Thiệu Bản Thân - Lê Trường An</title>
     <link rel="stylesheet" href="../assets/css/an.css">
+    <style>
+        
+        .dark-mode {
+            background: #121212;
+            color: #007bff; 
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()">Chuyển Chế Độ</button>
+    <header>
+        <h1>Xin Chào, Tôi Là Lê Trường An</h1>
+        <p>Một lập trình viên IT đầy nhiệt huyết và sáng tạo!</p>
+    </header>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+            const isDarkMode = document.body.classList.contains("dark-mode");
+            localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+        }
+        (function() {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "dark") {
+                document.body.classList.add("dark-mode");
+            }
+        })();
+    </script>
     <header>
         <h1>Xin Chào, Tôi Là Lê Trường An</h1>
         <p>Một lập trình viên IT đầy nhiệt huyết và sáng tạo!</p>
